@@ -2,6 +2,6 @@
 
 FROM nginx:1.17.1-alpine
 
-WORKDIR /src
+WORKDIR /
 
-COPY ./src /usr/share/nginx/html
+COPY ./ /usr/share/nginx/html

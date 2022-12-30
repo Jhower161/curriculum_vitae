@@ -3,7 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <title>Curriculum Vitae</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comfortaa', cursive;
+            background-color: #27282c;
+            color: white;
+        }
+
+        *::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #F5F5F5b8;
+            border-radius: 7px;
+        }
+
+        *::-webkit-scrollbar {
+            width: 7px;
+            height: 7px;
+            background-color: #F5F5F5b8;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            border-radius: 7px;
+            background-image: -webkit-gradient(linear,
+            left bottom,
+            left top,
+            color-stop(0.44, rgb(106, 106, 106)));
+        }
+
+        .header-container {
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+            place-content: center;
+            align-items: center;
+            background-color: #ffffff1c;
+            border-radius: 0 0 100px 100px;
+        }
+
+        .main-container {
+            padding: 80px 40px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            gap: 40px;
+        }
+
+        .card {
+            padding: 20px;
+            background-color: #ffffff1c;
+            border-radius: 50px;
+        }
+
+        .profile-container {
+            flex-direction: column;
+            box-sizing: border-box;
+            display: flex;
+            place-content: center;
+            align-items: center;
+        }
+
+        .profile-center {
+            flex-direction: column;
+            box-sizing: border-box;
+            display: flex;
+            place-content: center flex-start;
+            align-items: center;
+        }
+
+        .font-image {
+            position: absolute;
+            z-index: 1;
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            background: rgb(0,254,255);
+            background: linear-gradient(159deg, rgba(0,254,255,1) 0%, rgba(255,0,116,1) 33%, rgba(192,0,255,1) 66%, rgba(255,188,0,1) 100%);
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-skills {
+            margin: 0 -40px;
+            padding: 40px 40px;
+            background: radial-gradient(26.76% 85.52% at 86.73% -12.86%,#c241ff 6.65%,#6b57ff 100%);
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            gap: 40px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-flow: row wrap;
+            box-sizing: border-box;
+            gap: 30px;
+        }
+
+        .skill-card {
+            padding: 30px 40px 40px;
+            background-color: #303033;
+            border-radius: 50px;
+        }
+
+        .section-tools {
+            margin: 0 -40px;
+            padding: 40px 40px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            gap: 40px;
+        }
+
+        .tools-container {
+            display: flex;
+            flex-flow: column;
+            box-sizing: border-box;
+            place-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .tools-bar {
+            display: flex;
+            flex-flow: row;
+            box-sizing: border-box;
+            place-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .section-y {
+            margin: -40px -40px 0;
+            padding: 40px 40px;
+            background: radial-gradient(53.2% 178.72% at 27.1% 182.75%, #ffc941 6.65%, #90fd1e 100%);
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+            place-content: center space-around;
+            align-items: center;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            gap: 20px;
+        }
+
+        .full-width {
+            width: 100%;
+        }
+
+        .footer-container {
+            padding: 40px 0 80px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            place-content: center;
+            align-items: center;
+            background-color: #ffffff1c;
+        }
+
+        .line {
+            width: 80%;
+            height: 1px;
+            margin: auto 40px;
+            background-color: #ffffff;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -14,16 +201,27 @@
 
 <main class="main-container">
 
-    <div class="card">
+    <div class="card profile-center">
 
-        <h2>Profesional Profile</h2>
+        <div class="profile-container">
+
+            <div class="font-image"></div>
+
+            <img src="https://scontent.feoh3-1.fna.fbcdn.net/v/t39.30808-6/241620950_2387361128062351_7112740173877547068_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEsW1DPiKCV2VbDA7tcWcDT2foDMfgGGf7Z-gMx-AYZ_nCDE-EDTQJkzTZnwJZxiPXcKW1QVnGESLCeckaSGZvs&_nc_ohc=YKBp0_kyd_EAX9DJq8i&_nc_ht=scontent.feoh3-1.fna&oh=00_AfBvPtk3lTytUIUsPqaH0N3oxsBuZv4ty5u7N6cqDwoibw&oe=63B2CB95"
+                 alt="profile" class="profile-image" />
+
+        </div>
+
+        <h2 class="title">Profesional Profile</h2>
 
         <p>
             I am a person with an excellent attitude for teamwork, observation and analysis skills,
             ease of expression, a high sense of orientation regarding the functions performed, organized, honest,
             confidential in handling information, with a high command of responsibility, ease of learning,
             adaptability to change and excellent treatment of others.
+        </p>
 
+        <p>
             Additionally, I have a great experience as a Fullstack Developer with a high knowledge in
             the management of languages on the Backend side such as Java, Kotlin, Node.js and Python,
             I have good knowledge of the use of Frameworks and Libraries such as Spring, Nextjs, Flask,
@@ -37,49 +235,108 @@
 
     </div>
 
-    <div class="card">
-
-        <h2>Personal Information</h2>
-
-        <div>
-
-            <p>Date of Birth: <span>February 09, 1997</span></p>
-            <p>ID: <span>1.152.216.342 from Medellín</span></p>
-            <p>Military Book: <span>8986</span></p>
-            <p>District: <span>048</span></p>
-            <p>Marital Status: <span>Single</span></p>
-            <p>Residence Address: <span>Street 57B #31 – 24</span></p>
-            <p>Cell phone: <span>320 768 2377</span></p>
-
-        </div>
-
-    </div>
-
-    <div class="card">
+    <div class="section-skills">
 
         <h2>Applied Studies</h2>
 
-        <div>
-            Higher Education
+        <div class="skills-container">
 
-            Servicio Nacional de Aprendizaje SENA
-            Sofware Programming Technician
-            Medellín, 2020
+            <div class="skill-card column">
+
+                <h3>Higher Education</h3>
+
+                <span>Servicio Nacional de Aprendizaje SENA</span>
+                <span>Sofware Programming Technician</span>
+                <span>Medellín, 2020</span>
+
+            </div>
+
+            <div class="skill-card column">
+
+                <h3>Work Experience</h3>
+
+                <span>INTEGRAL SOFTWARE S.A.S.</span>
+                <span>Job Title: Senior Developer</span>
+                <span>Time worked: 3 years</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section-tools">
+
+        <h2>Tools that are called</h2>
+
+        <div class="tools-container">
+
+            <h3>Frontend</h3>
+
+            <div class="tools-bar">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiwhavnqKNeVQwHQbqoIspp3ymq7ZoDxupUQ&usqp=CAU" alt="html">
+                <span>CSS</span>
+                <span>Javascript</span>
+                <span>Typescript</span>
+                <span>Angular</span>
+                <span>React</span>
+                <span>React Native</span>
+
+            </div>
+
+            <h3>Backend</h3>
+
+            <div>
+                <span>Java</span>
+                <span>Kotlin</span>
+                <span>Node.js</span>
+                <span>Python</span>
+                <span>Spring</span>
+                <span>Nextjs</span>
+                <span>Flask</span>
+                <span>django</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section-y">
+
+        <h2>Applied Studies</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card column">
+
+                <h3>Higher Education</h3>
+
+                <span>Servicio Nacional de Aprendizaje SENA</span>
+                <span>Sofware Programming Technician</span>
+                <span>Medellín, 2020</span>
+
+            </div>
+
+            <div class="skill-card column">
+
+                <h3>Work Experience</h3>
+
+                <span>INTEGRAL SOFTWARE S.A.S.</span>
+                <span>Job Title: Senior Developer</span>
+                <span>Time worked: 3 years</span>
+
+            </div>
+
         </div>
 
     </div>
 
     <div class="card">
 
-        <h2>Work Experience</h2>
+        <h2 class="title">contact me</h2>
 
-        <div>
-            INTEGRAL SOFTWARE S.A.S.
-            Immediate Boss: Israel Villegas
-            Cell phone: 313 871 2185
-            Job Title: Senior Developer
-            Time worked: 3 years
-        </div>
+        <p>You can send me an email to jhower.161@gmail.com or send me a message on Whatsapp +57 320 768 2377</p>
 
     </div>
 
