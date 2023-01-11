@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Curriculum Vitae</title>
+    <script src="https://kit.fontawesome.com/5de928c213.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
@@ -148,7 +149,17 @@
             gap: 30px;
         }
 
-        .section-y {
+        .image-tool {
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .image-icon {
+            height: 30px;
+            object-fit: cover;
+        }
+
+        .section-works {
             margin: -40px -40px 0;
             padding: 40px 40px;
             background: radial-gradient(53.2% 178.72% at 27.1% 182.75%, #ffc941 6.65%, #90fd1e 100%);
@@ -174,20 +185,69 @@
         }
 
         .footer-container {
-            padding: 40px 0 80px;
-            display: flex;
+            padding: 40px 20px 80px;
             flex-direction: column;
             box-sizing: border-box;
-            place-content: center;
-            align-items: center;
+            display: flex;
+            place-content: stretch flex-start;
+            align-items: stretch;
             background-color: #ffffff1c;
         }
 
+        .row-options {
+            flex-direction: row;
+            box-sizing: border-box;
+            display: flex;
+            place-content: flex-start space-between;
+            align-items: flex-start;
+        }
+
         .line {
-            width: 80%;
             height: 1px;
-            margin: auto 40px;
+            margin: 20px 0;
             background-color: #ffffff;
+        }
+
+        .row-network {
+            flex-direction: row;
+            box-sizing: border-box;
+            display: flex;
+            place-content: center space-between;
+            align-items: center;
+            font-weight: bold;
+            font-size: 15px;
+            color: #b3b4b6;
+        }
+
+        .row-network-section {
+            flex-direction: row;
+            box-sizing: border-box;
+            display: flex;
+            place-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .row-terms {
+            flex-direction: row;
+            box-sizing: border-box;
+            display: flex;
+            place-content: center flex-start;
+            gap: 20px;
+            align-items: center;
+            font-weight: bold;
+            font-size: 15px;
+            color: #b3b4b6;
+        }
+
+        .row-copyright {
+            flex-direction: row;
+            box-sizing: border-box;
+            display: flex;
+            place-content: center space-between;
+            align-items: center;
+            font-size: 15px;
+            color: #939496;
         }
 
     </style>
@@ -207,7 +267,7 @@
 
             <div class="font-image"></div>
 
-            <img src="https://scontent.feoh3-1.fna.fbcdn.net/v/t39.30808-6/241620950_2387361128062351_7112740173877547068_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEsW1DPiKCV2VbDA7tcWcDT2foDMfgGGf7Z-gMx-AYZ_nCDE-EDTQJkzTZnwJZxiPXcKW1QVnGESLCeckaSGZvs&_nc_ohc=YKBp0_kyd_EAX9DJq8i&_nc_ht=scontent.feoh3-1.fna&oh=00_AfBvPtk3lTytUIUsPqaH0N3oxsBuZv4ty5u7N6cqDwoibw&oe=63B2CB95"
+            <img src="https://scontent.feoh1-1.fna.fbcdn.net/v/t39.30808-6/241620950_2387361128062351_7112740173877547068_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEsW1DPiKCV2VbDA7tcWcDT2foDMfgGGf7Z-gMx-AYZ_nCDE-EDTQJkzTZnwJZxiPXcKW1QVnGESLCeckaSGZvs&_nc_ohc=I4G7BoHI3CkAX9aWKhk&tn=CzYHcgox-wrw3JZe&_nc_ht=scontent.feoh1-1.fna&oh=00_AfBTocN-j2RU78b3Gf2EyvmhN1yFb0LPips86LjQcCmU_w&oe=63C497D5"
                  alt="profile" class="profile-image" />
 
         </div>
@@ -243,7 +303,13 @@
 
             <div class="skill-card column">
 
-                <h3>Higher Education</h3>
+                <div class="row">
+
+                    <h3>Technical Education</h3>
+
+                    <img class="image-icon" src="https://sena.edu.co/Style%20Library/alayout/images/logoSena.png" alt="sena">
+
+                </div>
 
                 <span>Servicio Nacional de Aprendizaje SENA</span>
                 <span>Sofware Programming Technician</span>
@@ -253,11 +319,17 @@
 
             <div class="skill-card column">
 
-                <h3>Work Experience</h3>
+                <div class="row">
 
-                <span>INTEGRAL SOFTWARE S.A.S.</span>
-                <span>Job Title: Senior Developer</span>
-                <span>Time worked: 3 years</span>
+                    <h3>Technologic Education</h3>
+
+                    <img class="image-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Logo-ITM-01.png/1200px-Logo-ITM-01.png" alt="itm">
+
+                </div>
+
+                <span>Instituto Tecnológico Metropolitano de Medellín - ITM</span>
+                <span>Software Development Technology</span>
+                <span>Medellín, In progress</span>
 
             </div>
 
@@ -275,56 +347,55 @@
 
             <div class="tools-bar">
 
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiwhavnqKNeVQwHQbqoIspp3ymq7ZoDxupUQ&usqp=CAU" alt="html">
-                <span>CSS</span>
-                <span>Javascript</span>
-                <span>Typescript</span>
-                <span>Angular</span>
-                <span>React</span>
-                <span>React Native</span>
+                <img class="image-tool" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png" alt="html">
+                <img class="image-tool" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_css_icon_130661.png" alt="css">
+                <img class="image-tool" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_js_official_icon_130509.png" alt="javascript">
+                <img class="image-tool" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_official_icon_130107.png" alt="typescript">
+                <img class="image-tool" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_angular_icon_130754.png" alt="angular">
+                <img class="image-tool" src="https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_logo_icon_146374.png" alt="react">
 
             </div>
 
             <h3>Backend</h3>
 
-            <div>
-                <span>Java</span>
-                <span>Kotlin</span>
-                <span>Node.js</span>
-                <span>Python</span>
-                <span>Spring</span>
-                <span>Nextjs</span>
-                <span>Flask</span>
-                <span>django</span>
+            <div class="tools-bar">
+
+                <img class="image-tool" src="./assets/java.png" alt="Java">
+                <img class="image-tool" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_kotlin_icon_130487.png" alt="Kotlin">
+                <img class="image-tool" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_node_icon_130301.png" alt="Node.js">
+                <img class="image-tool" src="https://cdn.icon-icons.com/icons2/112/PNG/512/python_18894.png" alt="Python">
+                <img class="image-tool" src="https://cdn.freebiesupply.com/logos/large/2x/spring-3-logo-png-transparent.png" alt="Spring">
+                <img class="image-tool" src="https://media.graphassets.com/VKHHNvEETYqZRkqgjybc" alt="Nextjs">
+                <img class="image-tool" src="https://www.seekpng.com/png/full/70-701539_flask-flask-python-png.png" alt="Flask">
+                <img class="image-tool" src="https://cdn.icon-icons.com/icons2/2415/PNG/512/django_plain_logo_icon_146558.png" alt="django">
+
             </div>
 
         </div>
 
     </div>
 
-    <div class="section-y">
+    <div class="section-works">
 
-        <h2>Applied Studies</h2>
+        <h2>Applied Works</h2>
 
         <div class="skills-container">
-
-            <div class="skill-card column">
-
-                <h3>Higher Education</h3>
-
-                <span>Servicio Nacional de Aprendizaje SENA</span>
-                <span>Sofware Programming Technician</span>
-                <span>Medellín, 2020</span>
-
-            </div>
 
             <div class="skill-card column">
 
                 <h3>Work Experience</h3>
 
                 <span>INTEGRAL SOFTWARE S.A.S.</span>
-                <span>Job Title: Senior Developer</span>
+                <span>Job Title: Semi-Senior Developer</span>
                 <span>Time worked: 3 years</span>
+
+                <div class="tools-bar">
+
+                    <img class="image-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Escudo_Universidad_de_Medellin.svg/1200px-Escudo_Universidad_de_Medellin.svg.png" alt="udem">
+                    <img class="image-icon" src="https://cdn979857.fac.mil.co/sites/incorporacion/files/banner/marca-fac.png" alt="fac">
+                    <img class="image-icon" src="https://cdnwordpresstest-f0ekdgevcngegudb.z01.azurefd.net/es/wp-content/themes/theme_alcaldia/logos/logo_footer.png" alt="alcaldia de medellin">
+
+                </div>
 
             </div>
 
@@ -332,7 +403,7 @@
 
     </div>
 
-    <div class="card">
+    <div class="section-tools">
 
         <h2 class="title">contact me</h2>
 
@@ -344,7 +415,7 @@
 
 <footer class="footer-container">
 
-    <div class="row full-width">
+    <div class="row-options">
 
         <div>
             <h3>Productos</h3>
@@ -365,23 +436,26 @@
     </div>
 
     <div class="line"></div>
-    x
 
-    <div class="row full-width">
+    <div class="row-network">
 
-        <div class="row">
+        <div class="row-network-section">
 
-            <div>Facebook</div>
+            <i class="fa-brands fa-facebook"></i>
 
-            <div>Instagram</div>
+            <i class="fa-brands fa-instagram"></i>
 
-            <div>Linkedin</div>
+            <i class="fa-brands fa-linkedin"></i>
 
         </div>
 
-        <div class="row">
+        <div class="row-network-section">
+
+            <i class="fa-solid fa-earth-americas"></i>
 
             <p>Colombia</p>
+
+            <i class="fa-solid fa-language"></i>
 
             <p>Español</p>
 
@@ -389,11 +463,19 @@
 
     </div>
 
-    <p>Terminos y condiciones   |   Politicas de privacidad     |   Condiciones de uso</p>
+    <div class="row-terms">
 
-    <div class="row full-width">
+        <p>Terminos y condiciones</p>
 
-        <p>Copyright © 2000-2022</p>
+        <p>Politicas de privacidad</p>
+
+        <p>Condiciones de uso</p>
+
+    </div>
+
+    <div class="row-copyright">
+
+        <p>Copyright © 2000-2023</p>
 
         <p>Developed by Jhower Orozco</p>
 
